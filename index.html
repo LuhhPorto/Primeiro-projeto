@@ -2,36 +2,43 @@
 <html>
     <head>
         <title>Primeiro Projeto</title>
+        <link rel="stylesheet" href="./css/style.css" />
         
     </head>
 
     <body>
         <header> <!--Cabeçalho-->
             <div class="cabecalho-menu">
-                <img class="logo" src="./img/Ellipse 13.png" /> <!--Logo-->
-                <table class="menu"> <!--Menu para mudar de paginas-->
-                    <td>
-                        <tr>Limpar dados</tr>
-                        <tr>Cadastro de transações</tr>
-                    </td>
-                </table>
+                <div class="logo">
+                    <img  src="./img/Ellipse 13.png" /> <!--Logo-->
+                </div> 
+                <div class="controlefinanceiro">
+                    Controle financeiro
+                </div>
+                <div class="menu" ><!--Menu-->
+                    <a href="./index.html">Cadastro de transações </a> 
+                <div>
+                    <hr class="hr" width="20px"> <!--espaçamento entre os menus-->
+                </div>
+                    <a href="./index.html" >Limpar dados</a> <!--menu-->
+                </div>
             </div>
         </header> <!--Fim do cabeçalho-->
 
-        <section>
+        <section class="nova-transacao">
         <div>
                 <h1>Nova transação</h1>
                 <br />
             <div>    
-                <label for="transacao">Tipo de transação</label>
-                <input type="transacao" id="transacao" required type="text" />
+                <div><label for="transacao">Tipo de transação</label> </div>
+                <input type="" id="transacao" required type="text" />
             </div>
             <div>    
-                <label for="mercadoria">Nome da mercadoria</label>
+                <div><label for="mercadoria">Nome da mercadoria</label> </div>
                 <input type="mercadoria" id="mercadoria" required type="text" />
-            </div>
+            </div> 
             <div>    
-                <label for="valor">Valor</label>
+                <div><label for="valor">Valor</label></div>
                 <input type="valor" id="valor" required type="number" />
             </div> 
             <div>   
@@ -40,7 +47,7 @@
         </div>
         </section>
 
-        <section>
+        <section class="extrato">
             <div>
                 <table>
                     <tr>
