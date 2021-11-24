@@ -2,7 +2,9 @@
 <html>
     <head>
         <title>Primeiro Projeto</title>
-        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/body.css" />
+        <link rel="stylesheet" href="./css/header.css" />
+        
         
     </head>
 
@@ -31,31 +33,42 @@
                 <br />
             <div>    
                 <div><label for="transacao">Tipo de transação</label> </div>
+                <div class="input">
                 <input type="" id="transacao" required type="text" />
+                </div>
             </div>
             <div>    
                 <div><label for="mercadoria">Nome da mercadoria</label> </div>
+                <div class="input">
                 <input type="mercadoria" id="mercadoria" required type="text" />
+                </div>
             </div> 
             <div>    
                 <div><label for="valor">Valor</label></div>
-                <input type="valor" id="valor" required type="number" />
+                <div class="input">
+                <input type="valor" id="valor" required type="number" /> 
+                </div>
             </div> 
-            <div>   
-                <input type="submit" value="Adicionar transação" />
+            <div >   
+                <input type="submit" id="submit" value="Adicionar transação" />
             </div>
         </div>
         </section>
 
-        <section class="extrato">
-            <div>
-                <table>
+        <section >
+            <div class="extrato">
+
+                <div>
+                    <h1>Extrato de transações</h1>
+                </div>
+
+                <table class="extrato-tabela">
                     <tr>
                         <td>Mercadoria</td>
                         <td>Valor</td>
                     </tr>
                     <tr>
-                        <td>+ Lorem ipsum dolor sit amet consectetur</td>
+                        <td>+ Lorem ipsum dolor sit amet <br> consectetur</td>
                         <td>R$ 12.999,00</td>
                     </tr>
                     <tr>
