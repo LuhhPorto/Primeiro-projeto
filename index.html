@@ -4,17 +4,7 @@
         <title>Primeiro Projeto</title>
         <link rel="stylesheet" href="./css/body.css" />
         <link rel="stylesheet" href="./css/header.css" />
-        <style>
-@font-face {
-    font-family: 'latoregular';
-    src: url('font/lato-regular-webfont.woff2') format('woff2'),
-         url('font/lato-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-        </style>
-        
+             
     </head>
 
     <body>
@@ -42,20 +32,25 @@
                 <br />
             <div>    
                 <div><label for="transacao">Tipo de transação</label> </div>
-                <div class="input">
-                <input type="" id="transacao" required type="text" />
-                </div>
+                
+                <form class="input">
+                    <select>
+                        <option value="Compra" > Compra
+                        <option value="Venda" > Venda  
+                    </select>
+                </form> 
+                
             </div>
             <div>    
                 <div><label for="mercadoria">Nome da mercadoria</label> </div>
                 <div class="input">
-                <input type="mercadoria" id="mercadoria" required type="text" />
+                <input type="mercadoria" id="mercadoria" required type="text" placeholder="  Input" />
                 </div>
             </div> 
             <div>    
                 <div><label for="valor">Valor</label></div>
                 <div class="input">
-                <input type="valor" id="valor" required type="number" /> 
+                <input type="valor" id="valor" required type="number" placeholder="  R$ 0,00" /> 
                 </div>
             </div> 
             <div >   

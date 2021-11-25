@@ -127,9 +127,9 @@
 
 @font-face {
     font-family: 'latoregular';
-    src: url('/primeiroprojeto/font/lato-regular-webfont.woff2') format('woff2'),
-         url('/primeiroprojeto/font/lato-regular-webfont.woff') format('woff');
+    src: url('C:/Users/Usuário/Desktop/Curso/Primeiro Projeto/font/lato-regular-webfont.woff2') format('woff2'),
+         url('C:/Users/Usuário/Desktop/Curso/Primeiro Projeto/font/lato-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
+
