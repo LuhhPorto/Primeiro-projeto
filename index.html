@@ -4,7 +4,16 @@
         <title>Primeiro Projeto</title>
         <link rel="stylesheet" href="./css/body.css" />
         <link rel="stylesheet" href="./css/header.css" />
-        
+        <style>
+@font-face {
+    font-family: 'latoregular';
+    src: url('font/lato-regular-webfont.woff2') format('woff2'),
+         url('font/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+        </style>
         
     </head>
 
@@ -58,38 +67,36 @@
         <section >
             <div class="extrato">
 
-                <div>
+                <div>  <!--Titulo do estrato-->
                     <h1>Extrato de transações</h1>
                 </div>
+                <div class="table"> <!--Começando o extrato-->
+                    <div class="table-inicio"> Mercadoria </div>
+                    <div class="table-inicio"> Valor </div>
+                </div>
+                <div class="table">
+                    <div> + Lorem ipsum dolor sit amet <br>   consectetur </div>
+                    <div> R$ 12.999,99 </div>
+                </div>
+                <div class="table">
+                    <div> -  Quis nostrub exercitation </div>
+                    <div> R$ 99,99 </div>
+                </div>
+                <div class="table">
+                    <div> +  Lorem ipsum </div>
+                    <div> R$ 9,99 </div>
+                </div> 
 
-                <table class="extrato-tabela">
-                    <tr>
-                        <td>Mercadoria</td>
-                        <td>Valor</td>
-                    </tr>
-                    <tr>
-                        <td>+ Lorem ipsum dolor sit amet <br> consectetur</td>
-                        <td>R$ 12.999,00</td>
-                    </tr>
-                    <tr>
-                        <td>- Quis nostrud exercitation</td>
-                        <td>R$ 99,99</td>
-                    </tr>
-                    <tr>
-                        <td>+ Lorem ipsum</td>
-                        <td>R$ 9,99</td>
-                    </tr>
-                    <tr>
-                        <td>Total</td>
-                        <td>R$ 12.909,99</td>
-                    </tr>
-                    <tr>
-                        <td></td>    
-                        <td>[LUCRO]</td>
-                    </tr>
+                <div class="table-final">
+                    <div> Total </div>
+                    <div> R$ 12.909,99   </div>
+                </div>
+                <div>
+                    <div>  </div>
+                    <div class="total"> [Lucro] </div>
+                </div>
                     
-                </table>
-            </div>
+            </div> <!--Finalizando o extrato-->
         </section>
 
     </body>

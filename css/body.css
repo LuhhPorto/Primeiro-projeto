@@ -25,7 +25,7 @@
 .nova-transacao h1{
     width: 174px;
     height: 20px;
-    font-family: Lato;
+    font-family: 'latoregular';
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -35,7 +35,7 @@
     text-align: center;
 }
 .nova-transacao label {
-    font-family: Lato;
+    font-family: 'latoregular';
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -44,7 +44,7 @@
     margin-left: 14.9px;
 }
 #submit {
-    font-family: Inter;
+    font-family: 'latoregular';
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -71,17 +71,65 @@
 .extrato h1 {
     width: 174px;
     height: 20px;
-    font-family: Lato;
+    font-family: 'latoregular';
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 22px;
     color: #000000;
-    margin-left: 239px;
+    margin-left: 239px;    
+}
+.table {
+    width: 660px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #979797;
+    align-items: center;
+    font-family: 'latoregular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
 
 }
-.extrato-tabela {
-    margin-left: 20px;
-    
+.extrato .total {
+    text-align: end;
+    margin-right: 25px;
+    margin-top: -16px;
+    font-family: 'latoregular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000000;
+}
+.table-inicio {
+    margin-bottom: -27px;
+    font-weight: bold;
+}
+.table-final {
+    margin-top: 3px;
+    width: 660px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #979797;
+    align-items: center;
+    font-family: 'latoregular';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('/primeiroprojeto/font/lato-regular-webfont.woff2') format('woff2'),
+         url('/primeiroprojeto/font/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
 }
