@@ -184,3 +184,92 @@ body {
     }
 
 }
+
+@media (max-width: 768px) {         /* @media para telas de 768px  */
+
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .controlefinanceiro {
+        margin-left: 245px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .um, .dois, .tres {
+        background-color: #333333;
+        height: 3px;
+        width: 80%;
+        margin: 5px auto;
+    }
+
+    .hamburguer {
+        width: 40px;
+        height: 30px;
+        margin-top: 24px;
+        margin-right: 20px;
+        margin-left: auto;
+    }
+
+    .nova-transacao {
+        width: 728px;
+        height: 189px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .mercadoria {
+        position: absolute;
+        margin-top: -22px;
+        margin-left: 171px;
+    }
+
+    .valor {
+        position: absolute;
+        margin-top: -22px;
+        margin-left: 538px;
+    }
+
+    .compravenda {
+        position: absolute;
+        height: 32px;
+        width: 150px;
+        margin-left: 20px;
+    }
+
+    #mercadoria {
+        position: absolute;
+        width: 348px;
+        height: 32px;
+        margin-left: 95px;
+    }
+
+    #valor {
+        position: absolute;
+        width: 150px;
+        height: 32px;
+        margin-left: 278px;
+    }
+
+    #submit {
+        position: absolute;
+        width: 200px;
+        height: 32px;
+        margin-top: 50px;
+        margin-left: 509px;
+    }
+
+    
+    .extrato {
+        width: 728px;
+        height: 281px;
+        margin-top: 23px;
+        margin-left: 20px;
+    }
+
+}
+

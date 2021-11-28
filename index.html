@@ -16,7 +16,13 @@
                 <div class="controlefinanceiro">
                     Controle financeiro
                 </div>
+                <div class="hamburguer">
+                    <div class="um"></div>
+                    <div class="dois"></div>
+                    <div class="tres"></div>
+                </div>
                 <div class="menu" ><!--Menu-->
+                    
                     <a href="./index.html">Cadastro de transações </a> 
                 <div>
                     <hr class="hr" width="20px"> <!--espaçamento entre os menus-->
@@ -31,9 +37,9 @@
             <section class="nova-transacao">
             <div>
                     <h1>Nova transação</h1>
-                    
+                                    
                 <div>    
-                    <div><label for="transacao">Tipo de transação</label> </div>
+                    <div><label for="transacao" >Tipo de transação</label> </div>
                     
                     <form>
                         <select class="compravenda">
@@ -44,21 +50,21 @@
                     
                 </div>
                 <div>    
-                    <div><label for="mercadoria">Nome da mercadoria</label> </div>
-                    <div class="input">
+                    <div class="mercadoria"><label for="mercadoria">Nome da mercadoria</label> </div>
+                    <div class="input" id="mercadoria">
                     <input type="mercadoria" id="mercadoria" required type="text" placeholder="  Input" />
                     </div>
                 </div> 
                 <div>    
-                    <div> <label for="valor">Valor</label> </div>
-                    <div class="input">
+                    <div class="valor"> <label for="valor">Valor</label> </div>
+                    <div class="input" id="valor">
                     <input type="valor" id="valor" required type="number" placeholder="  R$ 0,00" /> 
                     </div>
                 </div> 
                 <div >   
                     <input type="submit" id="submit" value="Adicionar transação" />
                 </div>
-                
+            
             </div>
             </section>
 
