@@ -2,8 +2,8 @@
 <html>
     <head>
         <title>Primeiro Projeto</title>
-        <link rel="stylesheet" href="./css/body.css" />
-        <link rel="stylesheet" href="./css/header.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+    
              
     </head>
 
@@ -26,73 +26,76 @@
             </div>
         </header> <!--Fim do cabeçalho-->
 
-        <section class="nova-transacao">
-        <div>
-                <h1>Nova transação</h1>
-                <br />
-            <div>    
-                <div><label for="transacao">Tipo de transação</label> </div>
-                
-                <form class="input">
-                    <select>
-                        <option value="Compra" > Compra
-                        <option value="Venda" > Venda  
-                    </select>
-                </form> 
-                
-            </div>
-            <div>    
-                <div><label for="mercadoria">Nome da mercadoria</label> </div>
-                <div class="input">
-                <input type="mercadoria" id="mercadoria" required type="text" placeholder="  Input" />
-                </div>
-            </div> 
-            <div>    
-                <div><label for="valor">Valor</label></div>
-                <div class="input">
-                <input type="valor" id="valor" required type="number" placeholder="  R$ 0,00" /> 
-                </div>
-            </div> 
-            <div >   
-                <input type="submit" id="submit" value="Adicionar transação" />
-            </div>
-        </div>
-        </section>
+        <section class="conteudo" >
 
-        <section >
-            <div class="extrato">
-
-                <div>  <!--Titulo do estrato-->
-                    <h1>Extrato de transações</h1>
-                </div>
-                <div class="table"> <!--Começando o extrato-->
-                    <div class="table-inicio"> Mercadoria </div>
-                    <div class="table-inicio"> Valor </div>
-                </div>
-                <div class="table">
-                    <div> + Lorem ipsum dolor sit amet <br>   consectetur </div>
-                    <div> R$ 12.999,99 </div>
-                </div>
-                <div class="table">
-                    <div> -  Quis nostrub exercitation </div>
-                    <div> R$ 99,99 </div>
-                </div>
-                <div class="table">
-                    <div> +  Lorem ipsum </div>
-                    <div> R$ 9,99 </div>
-                </div> 
-
-                <div class="table-final">
-                    <div> Total </div>
-                    <div> R$ 12.909,99   </div>
-                </div>
-                <div>
-                    <div>  </div>
-                    <div class="total"> [Lucro] </div>
-                </div>
+            <section class="nova-transacao">
+            <div>
+                    <h1>Nova transação</h1>
                     
-            </div> <!--Finalizando o extrato-->
-        </section>
+                <div>    
+                    <div><label for="transacao">Tipo de transação</label> </div>
+                    
+                    <form>
+                        <select class="compravenda">
+                            <option value="Compra" > Compra
+                            <option value="Venda" > Venda  
+                        </select>
+                    </form> 
+                    
+                </div>
+                <div>    
+                    <div><label for="mercadoria">Nome da mercadoria</label> </div>
+                    <div class="input">
+                    <input type="mercadoria" id="mercadoria" required type="text" placeholder="  Input" />
+                    </div>
+                </div> 
+                <div>    
+                    <div> <label for="valor">Valor</label> </div>
+                    <div class="input">
+                    <input type="valor" id="valor" required type="number" placeholder="  R$ 0,00" /> 
+                    </div>
+                </div> 
+                <div >   
+                    <input type="submit" id="submit" value="Adicionar transação" />
+                </div>
+                
+            </div>
+            </section>
 
+            <section >
+                <div class="extrato">
+
+                    <div class="title">  <!--Titulo do estrato-->
+                        <h1>Extrato de transações</h1>
+                    </div>
+                    <div class="table"> <!--Começando o extrato-->
+                        <div class="table-inicio"> Mercadoria </div>
+                        <div class="table-inicio"> Valor </div>
+                    </div>
+                    <div class="table">
+                        <div> + Lorem ipsum dolor sit amet <br>   consectetur </div>
+                        <div> R$ 12.999,99 </div>
+                    </div>
+                    <div class="table">
+                        <div> -  Quis nostrub exercitation </div>
+                        <div> R$ 99,99 </div>
+                    </div>
+                    <div class="table">
+                        <div> +  Lorem ipsum </div>
+                        <div> R$ 9,99 </div>
+                    </div> 
+
+                    <div class="table-final">
+                        <div> Total </div>
+                        <div> R$ 12.909,99   </div>
+                    </div>
+                    <div>
+                        <div>  </div>
+                        <div class="lucro"> [Lucro] </div>
+                    </div>
+                        
+                </div> <!--Finalizando o extrato-->
+            </section>
+        </section>
     </body>
 </html>

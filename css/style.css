@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'latoregular';
+    src: url('../font/lato-regular-webfont.woff2') format('woff2'),
+         url('../font/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0px;
+    font-family: 'latoregular';
+}
+
+                                /*  Inicio do Cabeçalho   */
+
+.cabecalho-menu {
+    width: 100%;
+    max-width: 1500px;
+    height: 80px;
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    margin-top: 22px;
+    margin-left: 10%;
+}
+
+.controlefinanceiro {
+    margin-top: 33px;
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.menu {
+    width: 350px;
+    height: 40px;
+    background: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-right: 200px;
+    margin-left: auto;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333333; 
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;       
+}
+
+.hr {
+    transform: rotate(90deg);
+}
+                             /*  Final do Cabeçalho   */
+
+.conteudo {
+    display: flex;             /* Para alinhar o conteudo um ao lado do outro  */
+    flex-direction: row;   
+}
+                            /* Iniciando o menu nova transação */
+.nova-transacao {
+    width: 400px;
+    height: 344px;
+    background: #ffffff;
+    border: 1px solid #979797;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-left: 10%;    
+}
+
+.nova-transacao h1 {
+    text-align: center;
+}
+
+.nova-transacao label {
+    font-size: 14px;
+    line-height: 22px;
+    color: #333333;
+    margin-left: 20px;
+}
+
+.compravenda {
+    height: 32px;
+    width: 370px;
+    border: 1px solid #979797;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-left: 14.9px;
+    margin-right: 14.9px;
+    margin-top: 2.3px;
+    margin-bottom: 20px; 
+    color: #979797;
+}
+
+.nova-transacao input {
+    height: 32px;
+    width: 370px;
+    border: 1px solid #979797;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-left: 14.9px;
+    margin-right: 14.9px;
+    margin-top: 2.3px;
+    margin-bottom: 15px; 
+}
+
+#submit {
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background: #333333;
+    margin-top: 10px;
+}                                   
+                        /* Final do menu nova transação */
+
+                        /* Iniciando o menu extrato */
+
+.extrato {
+    width: 680px;
+    height: 281px;
+    background: #ffffff;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.title {
+    text-align: center;
+}
+
+.table-inicio {
+    font-weight: bold;
+}
+
+.table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid #979797;
+}
+
+.table-final {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5px;
+    border-top: 1px solid #979797;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.lucro {
+    text-align: end;
+}
+                                /* Iniciando o menu extrato */
+
