@@ -160,5 +160,27 @@ body {
 .lucro {
     text-align: end;
 }
+
                                 /* final do menu extrato */
 
+                                /* Telas de 1024px   */
+
+@media (max-width: 1024px) {
+    .logo   {
+    margin-left: 22px;       
+}
+
+    .menu {
+        margin-right: 20px;
+        margin-left: auto;
+}
+
+    .nova-transacao {
+        margin-left: 22px;
+    }
+
+    .extrato {
+        width: 564px;
+    }
+
+}
