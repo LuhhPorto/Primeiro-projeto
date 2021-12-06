@@ -4,29 +4,40 @@
     <head>
         <title>Primeiro Projeto</title>
         <link rel="stylesheet" href="./css/style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
         <header> <!--Cabeçalho-->
             <div class="cabecalho-menu">
+                
                 <div class="logo">
                     <img  src="./img/Ellipse 13.png" /> <!--Logo-->
                 </div> 
-                <div class="controlefinanceiro">
-                    Controle financeiro
+                <div class="titulocabecalho">
+                   <nobr>Controle financeiro</nobr> 
                 </div>
-                <div class="hamburguer">
-                    <div class="um"></div>
-                    <div class="dois"></div>
-                    <div class="tres"></div>
+                
+                <div class="menuhamburguer">   <!-- Menu Hamburguer com abertura deslizante a esquerda-->
+                    <input type="checkbox" id="chec" >
+                    <label class="imghamburguer" for="chec">
+                        <img class="imghamburguer" src="./img/hamburguerlogo.png" />
+                    </label>
+                    <nav>
+                        <label for="chec"> <img class="img-x" src="./img/x.png" /> </label>
+                        <ul>
+                            <li><a href="./index.html">Cadastro de transações</a></li>
+                            <li><a href="./index.html">Limpar dados</a></li>
+                        </ul>
+                    </nav>
                 </div>
                 <div class="menu" ><!--Menu-->
-                    
-                    <a href="./index.html">Cadastro de transações </a>
-                     
+                    <div>
+                        <a href="./index.html">Cadastro de transações </a>
+                    </div> 
                     <div>
                         <hr class="hr" width="20px"> <!--espaçamento entre os menus-->
-                    </div>
+                    </div> 
                     <div>
                         <a href="./index.html" >Limpar dados</a> <!--menu-->
                     </div>
@@ -36,63 +47,48 @@
 
         <section class="conteudo" >
 
-            <section class="nova-transacao">
-                <div>
-                    <h1> Nova transação </h1>                    
-                    <div>    
-                        <div>
-                            <label for="transacao" >Tipo de transação</label> 
-                        </div>
-                                
-                        <form>
-                            <select class="compravenda">
-                                <option value="Compra" > Compra
-                                <option value="Venda" > Venda  
-                            </select>
-                        </form> 
+            
+                <form class="formulario">
+                    <div>
+                        <h3> Nova transação </h3>                    
                     </div>
-
-                    <div>    
-                            <div class="mercadoria">
-                                <label for="mercadoria">Nome da mercadoria</label> 
-                            </div>
-
-                            <div class="input" id="mercadoria">
-                                <input type="mercadoria" id="mercadoria" required type="text" placeholder="  Input" />
-                            </div>
+                    <div class="formlinha1">    
+                        <label for="compravendadescritivo" >Tipo de transação</label>  
+                        <select class="compravenda" >
+                            <option value="Compra" > Compra
+                            <option value="Venda" > Venda  
+                        </select>
+                    </div>
+                    <div class="formlinha2">    
+                        <label class="mercadoriadescritivo">Nome da mercadoria</label>         
+                        <input class="mercadoria" type="mercadoria"  required type="text" placeholder="Input" />
                     </div> 
-                    <div>    
-                        <div class="valor">
-                            <label for="valor">Valor</label> 
-                        </div>
-                        <div class="input" id="valor">
-                            <input type="valor" id="valor" required type="number" placeholder="  R$ 0,00" /> 
-                        </div>
+                    <div class="formlinha3">    
+                        <label class="valordescritivo" > Valor </label> 
+                        <input class="valor" type="valor" required type="number" placeholder="R$ 0,00"/> 
                     </div> 
-                    <div >   
-                        <input type="submit" id="submit" value="Adicionar transação" />
+                    <div class="formlinha4">   
+                        <input id="submit" type="submit" value="Adicionar transação" />
                     </div>
                     
-                </div>
-            
-            </section>
+                </form>
 
-            <section >
+            <section class="section">
                 <div class="extrato"> <!--Começando o extrato-->
 
                     <div class="title">  <!--Titulo do estrato-->
                         <h1>Extrato de transações</h1>
                     </div>
-                    <div class="table"> 
-                        <div class="table-inicio"> 
+                    <div class="primeiralinha"> 
+                        <div> 
                             Mercadoria 
                         </div>
-                        <div class="table-inicio"> 
+                        <div > 
                             Valor 
                         </div>
                     </div>
 
-                    <div class="table">
+                    <div class="segundalinha">
                         <div> 
                             + Lorem ipsum dolor sit amet <br>   consectetur 
                         </div>
@@ -101,7 +97,7 @@
                         </div>
                     </div>
 
-                    <div class="table">
+                    <div class="terceiralinha">
                         <div>
                              -  Quis nostrub exercitation 
                         </div>
@@ -110,7 +106,7 @@
                         </div>
                     </div>
 
-                    <div class="table">
+                    <div class="quartalinha">
                         <div>
                              +  Lorem ipsum 
                         </div>
@@ -119,7 +115,7 @@
                         </div>
                     </div> 
 
-                    <div class="table-final">
+                    <div class="quintalinha">
                         <div>
                              Total 
                         </div>
@@ -133,12 +129,18 @@
                               
                         </div>
                         <div class="lucro">
-                             [Lucro] 
+                             [LUCRO] 
                         </div>
                     </div>
                         
                 </div> <!--Finalizando o extrato-->
             </section>
         </section>
+
+        <footer>     <!-- Rodape  -->
+            <div class="rodape" >
+                
+            </div>
+        </footer>
     </body>
 </html>

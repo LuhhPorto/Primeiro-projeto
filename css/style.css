@@ -9,351 +9,318 @@
 body {
     margin: 0px;
     font-family: 'latoregular';
-}
-
-                                /*  Inicio do Cabeçalho   */
-
-.cabecalho-menu {
-    width: 100%;
     max-width: 1500px;
-    height: 80px;
-    background-color: #e0e0e0;
+}
+                        /* Inicio do Cabeçalho  */
+.cabecalho-menu {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 101%;
+    min-width: 411px;
+    height: 60px;
+    background: #e0e0e0;
 }
 
 .logo {
-    margin-top: 22px;
-    margin-left: 10%;
+    padding: 10px;
 }
 
-.controlefinanceiro {
-    margin-top: 33px;
-    margin-left: 20px;
-    font-weight: 600;
-    font-size: 20px;
+.titulocabecalho {
+    font-weight: bold;
 }
+
+#chec {
+    display: none;
+}
+
+.imghamburguer {
+    width: 30px;
+    height: 20px;
+    padding: 10px;
+}
+
 
 .menu {
-    width: 350px;
-    height: 40px;
-    background: #ffffff;
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 20px;
-    margin-right: 200px;
-    margin-left: auto;
+    display: none;
 }
-
-.menu a {
-    text-decoration: none;
-    color: #333333; 
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;       
-}
-
-.hr {
-    transform: rotate(90deg);
-}
-                             /*  Final do Cabeçalho   */
 
 .conteudo {
-    display: flex;             /* Para alinhar o conteudo um ao lado do outro  */
-    flex-direction: row;   
-}
-                            /* Iniciando o menu nova transação */
-.nova-transacao {
-    width: 400px;
-    height: 344px;
-    background: #ffffff;
-    border: 1px solid #979797;
-    box-sizing: border-box;
-    border-radius: 4px;
-    margin-top: 30px;
-    margin-left: 10%;    
+    display: flex;
+    flex-direction: column;
 }
 
-.nova-transacao h1 {
-    text-align: center;
-}
-
-.nova-transacao label {
-    font-size: 14px;
-    line-height: 22px;
-    color: #333333;
+                            /* Fim do Cabeçalho  */
+                            /* Inicio do conteudo  */
+.formulario {
+    width: 90%;
+    min-width: 380px;
+    height: 315px;
     margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-bottom: 1px solid #979797;
 }
 
-.compravenda {
+.formulario h3 {
+    display: none;
+}
+
+.formlinha1, .formlinha2, .formlinha3, .formlinha4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario input, .compravenda {
+    width: 100%;
     height: 32px;
-    width: 370px;
     border: 1px solid #979797;
-    box-sizing: border-box;
     border-radius: 4px;
-    margin-left: 14.9px;
-    margin-right: 14.9px;
-    margin-top: 2.3px;
-    margin-bottom: 20px; 
+    padding-left: 5px;
     color: #979797;
+    box-sizing: border-box;
 }
 
-.nova-transacao input {
-    height: 32px;
-    width: 370px;
-    border: 1px solid #979797;
-    box-sizing: border-box;
-    border-radius: 4px;
-    margin-left: 14.9px;
-    margin-right: 14.9px;
-    margin-top: 2.3px;
-    margin-bottom: 15px; 
+.formulario label {
+    padding-bottom: 5px;
 }
+
 
 #submit {
-    font-size: 14px;
-    line-height: 22px;
-    color: #FFFFFF;
+    width: 100%;
+    height: 32px;
+    border-radius: 4px;
     background: #333333;
-    margin-top: 10px;
-}                                   
-                        /* Final do menu nova transação */
-
-                        /* Iniciando o menu extrato */
+    color: white;
+}
 
 .extrato {
-    width: 680px;
+    width: 90%;
+    min-width: 380px;
     height: 281px;
-    background: #ffffff;
-    margin-top: 30px;
     margin-left: 20px;
+
 }
 
 .title {
     text-align: center;
 }
 
-.table-inicio {
-    font-weight: bold;
-}
-
-.table {
+.primeiralinha, .segundalinha, .terceiralinha, .quartalinha, 
+.quintalinha {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    align-items: center;
+    padding: 10px;
     border-bottom: 1px solid #979797;
 }
-
-.table-final {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 5px;
-    border-top: 1px solid #979797;
-    padding-top: 10px;
+.primeiralinha, .quintalinha {
     font-weight: bold;
+    padding: 2px;
+    margin-top: 10px;
+}
+
+.quintalinha {
+    border-bottom: none;
+    border-top: 1px solid #979797;
+    margin-top: 4px;
+    padding-top: 10px;
 }
 
 .lucro {
     text-align: end;
+    font-size: 10px;
 }
 
-                                /* final do menu extrato */
+                        /* Rodape */
 
-                                /* Telas de 1024px   */
-
-@media (max-width: 1024px) {
-    .logo   {
-    margin-left: 22px;       
-    }
-
-    .menu {
-        margin-right: 20px;
-        margin-left: auto;
-    }
-
-    .nova-transacao {
-        margin-left: 22px;
-    }
-
-    .extrato {
-        width: 564px;
-    }
-
-}
-
-@media (max-width: 768px) {         /* @media para telas de 768px  */
-
-    .conteudo {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .controlefinanceiro {
-        margin-left: 245px;
-    }
-
-    .menu {
-        display: none;
-    }
-
-    .um, .dois, .tres {
-        background-color: #333333;
-        height: 3px;
-        width: 80%;
-        margin: 5px auto;
-    }
-
-    .hamburguer {
-        width: 40px;
-        height: 30px;
-        margin-top: 24px;
-        margin-right: 20px;
-        margin-left: auto;
-    }
-
-    .nova-transacao {
-        width: 728px;
-        height: 189px;
-        margin-top: 20px;
-        margin-left: 20px;
-    }
-
-    .mercadoria {
-        position: absolute;
-        margin-top: -22px;
-        margin-left: 171px;
-    }
-
-    .valor {
-        position: absolute;
-        margin-top: -22px;
-        margin-left: 538px;
-    }
-
-    .compravenda {
-        position: absolute;
-        height: 32px;
-        width: 150px;
-        margin-left: 20px;
-    }
-
-    #mercadoria {
-        position: absolute;
-        width: 348px;
-        height: 32px;
-        margin-left: 95px;
-    }
-
-    #valor {
-        position: absolute;
-        width: 150px;
-        height: 32px;
-        margin-left: 278px;
-    }
-
-    #submit {
-        position: absolute;
-        width: 200px;
-        height: 32px;
-        margin-top: 50px;
-        margin-left: 509px;
-    }
-
-    
-    .extrato {
-        width: 728px;
-        height: 281px;
-        margin-top: 23px;
-        margin-left: 20px;
-    }
-
-}
-
-@media (max-width: 411px) {        /* Tela de 411px   */
-    
-    .controlefinanceiro {
-        margin-left: 55px;
-        margin-top: 28px;
-    }
-
-    .nova-transacao {
-        width: 371px;
-        height: 300px;
-        border-top: 0px;
-        border-left: 0px;
-        border-right: 0px;
-        border-bottom: 1px solid #979797;
-        border-radius: 0px;
-    }
-
-    .nova-transacao label {
-        margin-left: 0px;
-    }
-    
-    .nova-transacao h1 {
-        text-align: center;
-        display: none;
-    }
-
-    .mercadoria {
+.rodape {
+    width: 101%;
+    height: 10px;
+    background: #333333;
     position: absolute;
-    margin-top: 45px;
-    margin-left: 0px;
-    }
+    bottom: 0px;
+}
+                    /* Inicio do menu responsivo  */
 
-    #mercadoria {
-        position: absolute;
-        width: 371px;
-        height: 32px;
-        margin-top: 36px;
-        margin-left: 0px;
-    }
+.menuhamburguer nav {
+    position: absolute;
+    width: 351px;
+    height: 100%;
+    background: #333333;
+    right: 0px;
+    top: 0px;
+    left: -351px;
+}
 
-    .valor {
-        position: absolute;
-        margin-top: 118px;
-        margin-left: 0px;
-    }
+.menuhamburguer input[type="checkbox"]:checked ~ nav {
+    right: 0px;
+    left: initial;
+}
 
-    #valor {
-        position: absolute;
-        width: 371px;
-        height: 32px;
-        margin-top: 71px;
-        margin-left: 0px;
-    }
+.img-x {
+    padding: 20px;
+}
+
+.menuhamburguer nav ul {
+    list-style: none;
+    text-align: end;
+    padding: 0px;
+}
+
+.menuhamburguer nav ul li {
+    text-decoration: none;
+}
+
+.menuhamburguer nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+.menuhamburguer nav ul li a:hover {
+    background: #c4c4c4;
+}
+                    /* Final no menu responsivo */
+
+@media (min-width: 710px) { /* Telas de tablet */
+
+.formulario {
+    width: 90%;
+    height: 189px;
+    border: 1px solid #979797;
+    border-radius: 4px;
+    margin-top: 20px;
+    display: initial;
+}
+
+.imghamburguer {
+    padding: 30px;
+}
+
+.formlinha1, .formlinha3 {
+    width: 22%;
+    display: flex;
+    margin: 0px 8px;
+}
+
+#submit {
+    width: 200px;
+    align-items: flex-end;
+}
+
+.formlinha2 {
+    width: 50%;
+}
+
+.formulario h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.formlinha1, .formlinha2, .formlinha3 {
+    display: inline-flex;
+}
+
+.compravendadescritivo, .mercadoriadescritivo, .valordescritivo {
+    padding-bottom: 5px;
+}
+
+.formlinha4 {
+    align-items: end;
+    padding: 13px;
+}
+
+.menuhamburguer nav {
+    width: 250px;
+}
+
+}
+
+@media (min-width: 940px) {   /* Telas Descktop */
+
+.cabecalho-menu {
+    justify-content: inherit;
+}
+
+.logo {
+    margin-left: 10px;
+}
+
+.menuhamburguer{
+    display: none;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 350px;
+    height: 40px;
+    background: #ffffff;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.menu a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #333333;
+}
+
+.hr {
+    transform: rotate(90deg);
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 344px;
+}
+
+.formlinha1, .formlinha2, .formlinha3, .formlinha4 {
+    width: 95%;
     
-    .compravenda {
-        height: 32px;
-        width: 370px;
-        border: 1px solid #979797;
-        box-sizing: border-box;
-        border-radius: 4px;
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 2.3px;
-        margin-bottom: 20px; 
-        color: #979797;
-    }
-    
-    #submit {
-        font-size: 14px;
-        line-height: 22px;
-        color: #FFFFFF;
-        background: #333333;
-        margin-top: 205px;
-        margin-left: 0px;
-        width: 371px;
-        height: 32px;
-    }
+}
 
-    .extrato {
-        width: 371px;
-        height: 281px;
-    }
+.section {
+    margin-top: 26px;
+    width: 100%;
+    max-width: 652px;
+}
+
+.extrato {
+    width: 100%;
+    height: 281px;
+    
+}
+
+}
+
+@media (min-width: 1120px) {   /* Telas acima da média  */
+
+.menu {
+    margin-left: 535px;
+    margin-right: auto;
+}
+
+.logo {
+    margin-left: 200px;
+}
+
+.formulario {
+    margin-left: 200px;
+}
 
 }
