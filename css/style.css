@@ -9,21 +9,25 @@
 body {
     margin: 0px;
     font-family: 'latoregular';
-    max-width: 1500px;
 }
+
+.header {
+    background: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
                         /* Inicio do Cabeçalho  */
 .cabecalho-menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 101%;
+    width: 100%;
+    height: 50px;
+    max-width: 1112px;
     min-width: 411px;
-    height: 60px;
-    background: #e0e0e0;
-}
 
-.logo {
-    padding: 10px;
 }
 
 .titulocabecalho {
@@ -37,8 +41,9 @@ body {
 .imghamburguer {
     width: 30px;
     height: 20px;
-    padding: 10px;
+    cursor: pointer;
 }
+
 
 
 .menu {
@@ -48,6 +53,9 @@ body {
 .conteudo {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 }
 
                             /* Fim do Cabeçalho  */
@@ -56,7 +64,6 @@ body {
     width: 90%;
     min-width: 380px;
     height: 315px;
-    margin-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -93,14 +100,18 @@ body {
     border-radius: 4px;
     background: #333333;
     color: white;
+    cursor: pointer;
+}
+
+.section {
+    width: 100%;
+    margin-left: 20px;
 }
 
 .extrato {
-    width: 90%;
+    width: 95%;
     min-width: 380px;
     height: 281px;
-    margin-left: 20px;
-
 }
 
 .title {
@@ -162,6 +173,7 @@ body {
 
 .img-x {
     padding: 20px;
+    cursor: pointer;
 }
 
 .menuhamburguer nav ul {
@@ -193,12 +205,7 @@ body {
     height: 189px;
     border: 1px solid #979797;
     border-radius: 4px;
-    margin-top: 20px;
     display: initial;
-}
-
-.imghamburguer {
-    padding: 30px;
 }
 
 .formlinha1, .formlinha3 {
@@ -238,16 +245,19 @@ body {
     width: 250px;
 }
 
+
 }
 
 @media (min-width: 940px) {   /* Telas Descktop */
 
 .cabecalho-menu {
-    justify-content: inherit;
+    justify-content: center;
 }
 
-.logo {
+.titulocabecalho {
+    width: 100%;
     margin-left: 10px;
+
 }
 
 .menuhamburguer{
@@ -259,11 +269,9 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    width: 350px;
-    height: 40px;
+    width: 50%;
+    height: 90%;
     background: #ffffff;
-    margin-left: auto;
-    margin-right: 20px;
 }
 
 .menu a {
@@ -295,7 +303,6 @@ body {
 }
 
 .section {
-    margin-top: 26px;
     width: 100%;
     max-width: 652px;
 }
@@ -304,23 +311,6 @@ body {
     width: 100%;
     height: 281px;
     
-}
-
-}
-
-@media (min-width: 1120px) {   /* Telas acima da média  */
-
-.menu {
-    margin-left: 535px;
-    margin-right: auto;
-}
-
-.logo {
-    margin-left: 200px;
-}
-
-.formulario {
-    margin-left: 200px;
 }
 
 }
