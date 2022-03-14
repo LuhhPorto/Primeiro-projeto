@@ -47,7 +47,7 @@
 
         <section class="conteudo" >
 
-                <form class="formulario">
+                <form class="formulario" id="form">
                     <div>
                         <h3> Nova transação </h3>                    
                     </div>
@@ -60,14 +60,14 @@
                     </div>
                     <div class="formlinha2">    
                         <label class="mercadoriadescritivo">Nome da mercadoria</label>         
-                        <input class="mercadoria" type="mercadoria"  required type="text" placeholder="Input" />
+                        <input class="mercadoria" type="mercadoria" placeholder="Input" id="mercadoria" />
                     </div> 
                     <div class="formlinha3">    
                         <label class="valordescritivo" > Valor </label> 
-                        <input class="valor" type="valor" required type="number" placeholder="R$ 0,00"/> 
+                        <input class="valor" type="text" placeholder="R$ 0,00" onkeyup="dinheirobr()" id="valor"/> 
                     </div> 
                     <div class="formlinha4">   
-                        <input id="submit" type="submit" value="Adicionar transação" />
+                        <button id="submit" type="submit" onclick="validar()" >Adicionar transação</button>
                     </div>
                     
                 </form>
@@ -141,5 +141,7 @@
                 
             </div>
         </footer>
+
+        <script src="./js/index.js" ></script>
     </body>
 </html>
